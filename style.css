@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html,body{
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+    height: 100%;
+}
+.outer-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left,#3ed8ff,#a8f5ff);
+    overflow: hidden;
+}
+.inner-box{
+    width: 30%;
+    /* transform: translateY(-10%); */
+    padding: 1.25rem 2.5rem;
+    /* background-color: #ffffff09; */
+    background: linear-gradient(to top left, #ffffff, #ffffff33);
+    backdrop-filter:    blur(8px); 
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px #2979ad;
+    z-index: 2;
+}
+h1{
+    font-size: 2.5rem;
+    color: #212121;
+}
+.signup-header p{
+    font-size: 0.9rem;
+    color: #555;
+}
+.signup-body{
+    margin: 1.25rem 0;
+}
+.signup-body p{
+    margin:0.625rem 0;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+}
+.signup-body p label{
+    display: block;
+}
+.signup-body p input{
+    width: 100%;
+    padding: 0.625rem;
+    border: 2px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+}
+#submit{
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+   
+}
+#submit:hover{
+    background-color: #2980b9;
+}
+.signup-footer p{
+    color:#555;
+    text-align: center;
+}
+.signup-footer p a{
+    color: #3498db;
+    text-decoration: none;
+}
+.signup-footer p a:hover{
+    text-decoration: underline;
+}
+ .circle{
+    border-radius: 50%;
+    background: linear-gradient(to top right, #ffffff33,#ffffffff);
+    position: absolute;
+    z-index: 1;
+    animation: float 8s ease-in-out infinite;
+}
+
+.c1{
+    width:300px;
+    height:300px;
+    top: -100px;
+    left: -100px;   
+    animation-delay: 0s;
+}
+
+.c2{
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    right: -50px;
+    animation-delay: 0.5s;
+} 
+
+.c3{
+    width: 150px;
+    height: 150px;
+    top:50%;
+    right:350px;
+    transform: translateY(-50%);
+    animation-delay: 1s;
+}
+@keyframes float {
+    0%,100% {
+        transform: translateY(0) rotate(0deg); 
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .inner-box {
+        width: 70%;
+        padding: 1rem;
+    }
+
+    .c1 {
+        width: 200px;
+        height: 200px;
+        top:-50px;
+        left: -50px;
+    }
+
+    .c2 {
+        width: 150px;
+        height: 150px;
+        bottom: -30px;
+        right: -30px;
+    }
+    .c3 {
+        width: 100px;
+        height: 100px;
+        top: 60%;
+        right: 30px;
+    }
+}
