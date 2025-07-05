@@ -107,7 +107,7 @@ h1{
     width: 150px;
     height: 150px;
     top:50%;
-    right:350px;
+    right:360px;
     transform: translateY(-50%);
     animation-delay: 1s;
 }
