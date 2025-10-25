@@ -2,7 +2,7 @@
 
 # 🎯 SignUp Pages
 
-## [🌐 VIEW LIVE WEBSITE](https://omhari-kaushik.github.io/SignUp_Pages/)
+## [🌐 VIEW LIVE WEBSITE](https://omhari-kaushik.github.io/SignUp_Page/)
 
 *Click above to see the live demo*
 
